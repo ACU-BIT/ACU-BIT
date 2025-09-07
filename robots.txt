@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eslam33333333.github.io/IT-Core/sitemap.xml
