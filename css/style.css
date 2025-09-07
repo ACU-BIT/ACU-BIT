@@ -1371,4 +1371,66 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonial-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* يخلي الصورة دائرية لو حابب */
+}
+
+.testimonial-item {
+  flex-direction: column; /* يخلي المحتوى فوق وتحت في الموبايل */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-text {
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  .testimonial-text h3,
+  .testimonial-text h4,
+  .testimonial-text p {
+    font-size: 1rem;
+  }
+}
+
+$('.testimonials-carousel').owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    dots: true,
+    loop: true,
+    margin: 30,
+    responsive: {
+        0: { items: 1 },
+        768: { items: 2 },
+        992: { items: 3 }
+    }
+});
+
+
+
+
+
+
+
+
+
