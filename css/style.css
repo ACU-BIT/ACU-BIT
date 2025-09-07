@@ -1384,7 +1384,10 @@ html {
 
 
 
-/* Testimonials Section */
+
+
+
+
 .testimonials {
     position: relative;
     padding: 90px 0 60px 0;
@@ -1401,20 +1404,22 @@ html {
 }
 
 .testimonials .testimonial-img {
-    flex: 1;
-    max-width: 200px;
-    margin: auto;
-    text-align: center;
+    position: relative;
+    background: #000000;
+    overflow: hidden;
+    flex: 0 0 150px;
+    margin-right: 20px;
 }
 
 .testimonials .testimonial-img img {
     width: 100%;
     height: auto;
-    border-radius: 50%;
+    display: block;
 }
 
 .testimonials .testimonial-text {
-    flex: 2;
+    position: relative;
+    width: 100%;
     padding: 30px 15px;
     text-align: left;
     background: #ffffff;
@@ -1430,6 +1435,7 @@ html {
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .testimonials .testimonial-text p {
@@ -1457,11 +1463,18 @@ html {
     background-color: #4F84C4;
 }
 
-/* ✅ الموبايل: نخلي الصورة فوق والكلام تحت */
+/* ✅ التعديل المهم للموبايل */
 @media (max-width: 768px) {
     .testimonials .testimonial-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .testimonials .testimonial-img {
+        margin: 0 0 15px 0;
+        flex: none;
+        width: 100%;
+        max-width: 250px;
     }
 
     .testimonials .testimonial-text {
@@ -1469,6 +1482,9 @@ html {
         padding: 20px;
     }
 }
+
+
+
 
 
 
